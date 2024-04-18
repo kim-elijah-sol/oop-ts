@@ -1,0 +1,13 @@
+{
+  "name": "oop-ts",
+  "version": "1.0.0",
+  "description": "ts 로 oop 공부",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.0"
+  }
+}
