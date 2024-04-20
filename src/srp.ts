@@ -32,3 +32,45 @@ export class NoSRPDeveloper {
     return `[${this.position}] ${this.name} is setting up infrastructure.`;
   }
 }
+
+export class SRPFrontendDeveloper {
+  private name: string;
+  private position: string;
+
+  constructor(name: string, position: string) {
+    this.name = name;
+    this.position = position;
+  }
+
+  public reactDevelop() {
+    return `[${this.position}] ${this.name} is developing React application.`;
+  }
+}
+
+export class SRPBackendDeveloper {
+  private name: string;
+  private position: string;
+
+  constructor(name: string, position: string) {
+    this.name = name;
+    this.position = position;
+  }
+
+  public springDevelop() {
+    return `[${this.position}] ${this.name} is developing Spring application.`;
+  }
+}
+
+export class SRPDevOps {
+  private name: string;
+  private position: string;
+
+  constructor(name: string, position: string) {
+    this.name = name;
+    this.position = position;
+  }
+
+  public settingInfra() {
+    return `[${this.position}] ${this.name} is setting up infrastructure.`;
+  }
+}
