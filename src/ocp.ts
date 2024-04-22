@@ -11,7 +11,7 @@
  *
  * 이는 OCP를 위반한 코드이다.
  */
-class NoOPCDeveloper {
+class NoOCPDeveloper {
   private position: string;
 
   constructor(position: string) {
@@ -20,15 +20,27 @@ class NoOPCDeveloper {
 
   public work() {
     if (this.position === "frontend") {
-      return "React application";
+      return `${this.position} React application`;
     }
     if (this.position === "backend") {
-      return "Spring application";
+      return `${this.position} Spring application`;
     }
     if (this.position === "infra") {
-      return "infrastructure";
+      return `${this.position} infrastructure`;
     }
 
     return "No work";
+  }
+}
+
+class OCPDeveloper {
+  private position: string;
+
+  constructor(position: string) {
+    this.position = position;
+  }
+
+  public work(work: string) {
+    return `${this.position} ${work}`;
   }
 }
