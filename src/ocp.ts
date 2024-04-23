@@ -11,7 +11,7 @@
  *
  * 이는 OCP를 위반한 코드이다.
  */
-class NoOCPDeveloper {
+export class NoOCPDeveloper {
   private position: string;
 
   constructor(position: string) {
@@ -33,7 +33,7 @@ class NoOCPDeveloper {
   }
 }
 
-class OCPDeveloper {
+export class OCPDeveloper {
   private position: string;
 
   constructor(position: string) {
