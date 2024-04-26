@@ -29,3 +29,15 @@ export class NoLSPFrontDeveloper extends Developer {
     return `[${this.position}] ${this.name} is developing react application.`;
   }
 }
+
+/**
+ * LSP를 지킨 개발자 클래스
+ *
+ * develop 메소드를 오버라이딩하지 않고 새로운 메소드를 추가하여
+ * Developer 클래스를 대체할 수 있다.
+ */
+export class LSPFrontDeveloper extends Developer {
+  public developReeact() {
+    return `[${this.position}] ${this.name} is developing react application.`;
+  }
+}
