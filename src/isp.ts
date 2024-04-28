@@ -41,3 +41,44 @@ class BackendDeveloper extends Developer {
     console.log("Spring으로 개발합니다.");
   }
 }
+
+abstract class ISPDeveloper {
+  abstract 출근(): void;
+  abstract 퇴근(): void;
+}
+
+abstract class ReactDeveloper extends ISPDeveloper {
+  abstract react개발(): void;
+}
+
+abstract class ISPSpringDeveloper extends ISPDeveloper {
+  abstract spring개발(): void;
+}
+
+class ISPFrontendDeveloper extends ReactDeveloper {
+  출근() {
+    console.log("출근합니다.");
+  }
+
+  퇴근() {
+    console.log("퇴근합니다.");
+  }
+
+  react개발() {
+    console.log("React로 개발합니다.");
+  }
+}
+
+class ISPBackendDeveloper extends ISPSpringDeveloper {
+  출근() {
+    console.log("출근합니다.");
+  }
+
+  퇴근() {
+    console.log("퇴근합니다.");
+  }
+
+  spring개발() {
+    console.log("Spring으로 개발합니다.");
+  }
+}
